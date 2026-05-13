@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="eye"></div>
+    <div id="options-wrapper"></div>
+    <script defer type="module" src="js/main.js"></script>
+    <script>
+      // Browser preview only — not active in FiveM (invokeNative is undefined there at NUI load)
+      if (typeof invokeNative === "undefined") {
+        const wrapper = document.getElementById("options-wrapper");
+        document.body.style.visibility = "visible";
+        document.body.style.background = "#1a1a2e";
+        const items = [
+          { icon: "fa-solid fa-hand", label: "Interact" },
+          { icon: "fa-solid fa-box-open", label: "Open inventory" },
+          { icon: "fa-solid fa-user", label: "View profile" },
+          { icon: "fa-solid fa-car", label: "Enter vehicle" },
+        ];
+        items.forEach(({ icon, label }) => {
+          const div = document.createElement("div");
+          div.className = "option-container";
+          div.innerHTML = `<i class="fa-fw ${icon} option-icon"></i><p class="option-label">${label}</p>`;
+          wrapper.appendChild(div);
+        });
+      }
+    </script>
+  </body>
+</html>
