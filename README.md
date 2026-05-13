@@ -32,3 +32,7 @@ https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
 ## 📚 Only redesign
 
 - This script is only style redesign, all credits belong to OX (overextended)
+
+## 👀 Preview
+
+- You can preview it on web/preview.html
