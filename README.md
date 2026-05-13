@@ -18,7 +18,7 @@ https://overextended.dev/ox_target
 
 ## 💾 Download
 
-https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
+https://github.com/polautoriso/ox_target/releases/tag/v1.0.0
 
 ## ✨ Features
 
